@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    background: #5ED7CF;
+    color: #FFF;
+    font-family: sans-serif, monospace, fantasy;
+    padding: 28px;
+    text-align: center;
+    position: fixed;
+
+}
+.page{
+    padding-top: 100px;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    clear:both;
+}
+.container{
+    width: 80%;
+    float: left;
+}
+aside{
+    width: 20%;
+    float: left;
+    background:rgba(200,200,0,.5);
+
+}
+aside > ul{
+    list-style: none;
+    font-family: "Droid Sans",Arial;
+}
+aside > ul >li{
+    margin: 10px;
+    transition: background 2s ease,color 2s ease;
+    /*list-style: none;*/
+}
+aside > ul >li:hover{
+    background: #654321;
+    color: white;
+    cursor: pointer;
+
+    /*list-style: none;*/
+}
+
+
+footer{
+    width:100%;
+    background:#654321;
+    /*position: absolute;*/
+    margin-bottom: 0;
+    float:left;
+    bottom:0;
+    padding: 20px;
+    margin-top: 10px;
+}
+footer > p{
+    font-family: Verdana;
+    color:white;
+    font-size: 10px;
+    text-align: right;
+}
+
+section{
+    padding: 10px;
+    /*text-align: justify;*/
+
+}
+section>h2{
+    margin: 15px auto;
+    text-align: center;
+    font-family: "Droid Sans";
+}
+section>p{
+    margin-bottom: 10px;
+    text-indent: 50px;
+}
+h2{
+    float: left;
+    clear: both;
+}
+
+.impar{
+    background: #ccc;
+}
+.par{
+    background: #ccc111;
+}
+img{
+    width: 100%;
+    height: auto;
+    transition: width 2s;
+}
+img:hover{
+    width: 90%;
+}
+
+#four:hover{
+    /*
+    -webkit-animation:trans 5s infinite;
+    -o-animation:trans 5s infinite;
+    */
+    animation:trans 5s infinite;
+}
+
+@keyframes trans{
+    from{background: #ccc111;}
+    to{background: #fff;}
+}
+
+@media screen and (max-width:720px) and (min-width:420){
+    header{
+        background: #000;
+    }
+    .container{
+        width: 100%;
+
+    }
+    aside{
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+    img{
+        height: 1.5em;
+    width: auto;
+        float:left;
+        margin-right: 10px;
+        border:1px solid #ccc;
+
+}
+}
+
+@media screen and (max-width:420px){
+
+    .container{
+        width: 100%;
+
+    }
+    aside{
+       display:none;
+    }
+    img{
+        display: none;
+
+    }
+}

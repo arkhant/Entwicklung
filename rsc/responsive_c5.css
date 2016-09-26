@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    width: 100%;
+    background: #5ED7CF;
+    color: #FFF;
+    font-family: sans-serif, monospace, fantasy;
+    padding: 28px;
+    text-align: center;
+    position: fixed;
+
+}
+.page{
+    padding-top: 100px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 1em 25%;
+    clear: both;
+    position: relative;
+}
+.container{
+    padding: inherit;
+    width: 80%;
+    float: left;
+    font-family: sans-serif;
+
+}
+aside{
+    width: 20%;
+    float: left;
+    background: /*rgba(200, 200, 0, .5)*/#5ED7CF;
+
+}
+footer{
+    width: 100%;
+    background: #654321;
+    float: left;
+    /*position: absolute;*/
+    bottom: 0;
+    margin-bottom: 0;
+    padding: 20px;
+    margin-top: 10px;
+}
+footer > p{
+    font-family: sans-serif;
+    color: white;
+    font-size: 15px;
+    text-align: right;
+
+}
+aside > ul{
+   list-style: ;
+}
+aside > ul >li{
+    margin: 10px;
+    transition: background 2s ease;
+
+}
+aside > ul > li:hover{
+    background: green;
+    color: aliceblue;
+    cursor: pointer;
+}
+section{
+    padding: 15px;
+}
+section > h2{
+    margin: 15px auto;
+    text-align: center;
+    font-family: sans-serif;
+}
+section > p{
+    margin-bottom: 10px;
+    text-indent: 50px;
+}
+.impar{
+    background: #89E35B;
+
+}
+.par{
+    background: #FC4A4A;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+img:hover{
+
+}
+#cuarta:hover{
+    animation: trans 5s infinite;/*este es otro tipo de disparados para un efecto al pasar por el id cuarta*/
+}
+@keyframes trans{
+    from{
+        width: 100%;
+    }
+    to{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 720px){/*en este se diparará al llegar a los 720 pixeles*/
+    header{
+        background: #189CE8;
+    }
+    .container{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+    img{
+        height: 1.5em;
+        width: auto;
+    }
+}
+@media screen and (max-width: 420px){/* en este media querie, definimos como se va a disparar la página al llegar a una resolucion horizontal de 420 pixeles, que haran cambiar algúnos colores del archivo .html así como el ancho del container*/
+    header{
+        background: #6B18E8;
+    }
+    .container{
+        width: 100%;
+    }
+    aside{
+       display: none;
+    }
+}

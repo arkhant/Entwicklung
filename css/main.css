@@ -15,19 +15,21 @@
         margin-right: 10px;
         border:1px solid #ccc;
      position: static;
+    margin-bottom: auto;
 }
 
 
 .menu{
     color: white;
-    margin: 130px auto;
+      margin: 130px auto;
     max-width: 100%;
     min-width: 300px;
     padding: 20px;
     background: #000000;
     border-radius: 15px;
     font-family: "https://fonts.googleapis.com/css?family=Open+Sans";
-    position: static;
+   position: static;
+     margin-bottom: 0px;
 }
 .menu ul{
     list-style: :none;
@@ -40,7 +42,18 @@
 .menu input{
     object-position: right;
 }
+.page{
 
+    color: white;
+
+    max-width: 100%;
+    min-width: 300px;
+
+    background: #000000;
+    border-radius: 15px;
+    font-family: "https://fonts.googleapis.com/css?family=Open+Sans";
+
+}
 
 footer{
     width:100%;
